@@ -1,0 +1,31 @@
+ARHITECTURA SISTEMELOR DE CALCUL
+TEMA 2
+DOBRE RARES, 334 CC
+
+
+Neoptim:
+    Am realizat o operatiile in aproape cel mai hardcore mod posibil. Puteam
+    sa complic, intr-adevar, calculele si mai mult facand si operatii sperate
+    pentru calculul transpuselor insa am zis sa nu dau prea mare
+    bataie de cap echipei de corectare care va astepta terminarea rularii
+    programului.
+
+Optimizare prin cod: 
+    Pentru optimizare am folosit un registru. Deoarece elementul C[i][j] este
+    o referinta in cadrul unui vector, se pierdea mult timp. Avand un registru
+    se foloseste util o resursa si astfel putem calcula intr-o variabila, la 
+    fiecare pas, o valoare pe care o introducem mai apoi in matrice.
+
+In pdf-ul din cadrul arhivei se pot observa atent rezultatele rularii compiland
+atat cu gcc, cat si cu icc. In GCC_TIME se pot observa diferentele intre cei 3
+timpi de executie la compilarea cu gcc. In ICC_TIME se pot observa diferentele
+intre cei 3 timpi de executie la compilarea cu icc. In GCC_vs_ICC observam ca
+ICC ofera un timp mai bun de executie pe o marime maximala sau minimala a 
+datelor de intrare.
+
+Diferetele, in cadrul oricaror executii sau optimizari, sunt direct proportio-
+nale cu dimensiunea datelor de intrare: cu cat e testul mai mare, cu atat 
+diferenta de timp este mai mare.
+
+Tema in sine este foarte interesanta si sunt constient ca se putea obtine mult
+mai mult de la ea insa atunci cand vrei sa treci si la SO, e cam greu.
